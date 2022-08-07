@@ -1,0 +1,40 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* min-height: 600px; */
+  min-width: 320px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  animation: show 0.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    max-width: 540px;
+    padding: 40px;
+  }
+}

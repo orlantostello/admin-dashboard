@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Products from '../../components/Products/Products';
 import Sidebar from '../../components/Sidebar/Sidebar';
 
-const Pageproducts = () => {
+const PageProducts = () => {
   return (
     <div className="flex">
       <Sidebar />
@@ -18,4 +18,4 @@ const Pageproducts = () => {
   );
 };
 
-export default Pageproducts;
+export default PageProducts;
