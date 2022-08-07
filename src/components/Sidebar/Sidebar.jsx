@@ -34,14 +34,14 @@ const Sidebar = () => {
           </Link>
           <Link to="/products" style={{ textDecoration: 'none' }}>
             <li>
-              <PeopleOutlineIcon className={s.icon} />
-              <span>Customers</span>
-            </li>
-            <li>
               <StoreIcon className={s.icon} />
               <span>Products</span>
             </li>
           </Link>
+          <li>
+            <PeopleOutlineIcon className={s.icon} />
+            <span>Customers</span>
+          </li>
 
           <li>
             <InsertChartIcon className={s.icon} />
